@@ -1,8 +1,6 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import React from 'react';
-
-const { useRef } = React;
+import { useRef } from 'react';
 // console.log(React.version);
 function App() {
   const container: any = useRef();
@@ -13,7 +11,7 @@ function App() {
     gsap.to(".box", { rotation: "+=360", duration: 3 });
 
     // or refs...
-    gsap.to('.circle', { rotation: "-=360", duration: 3 });
+    gsap.to(".circle", { rotation: "-=360", duration: 3 });
   },
     { scope: container }
   ); // <-- scope for selector text (optional)
